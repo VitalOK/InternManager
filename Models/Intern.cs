@@ -1,18 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Controller.Models
+namespace Models
 {
     public class Intern
     {
         [Key]
         [Required]
-        [Remote(action: "VerifyId", controller: "Interns")]
         public int Id { get; set; }
 
         [Required]
